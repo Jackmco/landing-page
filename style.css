@@ -2,23 +2,69 @@
     border: solid red 1px;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: auto;
-    justify-content: space-between;
-}
-
 .header,
 .right-links,
 ul,
 .header-body,
 body,
 .footer,
-.header-body-image {
+.header-body-image,
+.header-container,
+.header-body-header,
+.header-body-summary,
+.sign-up-button-container,
+.card-block,
+.card-container,
+.card,
+.blue-box,
+.card-description,
+.quote-body,
+.quote,
+.quote-signature {
     display: flex;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    justify-content: space-between;
+}
+
 .header-body {
+    padding: 0 200px 0;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.header-container {
+    flex-direction: column;
+    flex: 1;
+    align-self: center;
+    gap: 12px
+}
+
+.header-body-header {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    margin-right: 300px;
+}
+
+.header-body-summary {
+    margin-right: 200px;
+}
+
+.sign-up-button {
+    background-color: #3882f6;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 4px 25px 4px;
+    font-weight: 200;
+}
+
+.header-body-image {
+   flex: 1;
 }
 
 ul {
@@ -29,7 +75,7 @@ ul {
 .header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 150px 0;
+    padding: 0 200px 0;
 }
 
 .header,
@@ -70,10 +116,68 @@ body {
     margin-top: auto;
     padding: 40px;
     justify-content: center;
-    /* border: solid red 1px; */
 }
 
 img {
-    height: 200px;
-    max-width: auto;
+    height: 300px;
+    width: 800px;
+    padding: 100px 0 100px 0;
 }
+
+.card-block {
+    flex-direction: column;
+    padding-bottom: 75px;
+}
+
+.body-title {
+    align-self: center;
+    margin: 30px 0 30px;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.card-container {
+    align-self: center;
+    gap: 60px;
+}
+
+.card {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.blue-box {
+    height: 125px;
+    width: 125px;
+    border: solid #3882f6 3px;
+    border-radius: 7px;
+}
+
+.card-description {
+    text-align: center;
+    width: 125px;
+    font-weight: 18px;
+    color: #52555c;
+    padding-top: 5px;
+}
+
+.quote-body {
+    flex-direction: column;
+    background-color: #e5e7eb;
+    align-items: center;
+}
+
+.quote {
+    color: #1f2937;
+    font-style: italic;
+    font-size: 36px;
+    margin: 80px 600px 0px;
+}
+
+.quote-signature {
+    color: #1f2937;
+    font-size: 24px;
+    margin: 0;
+} 
