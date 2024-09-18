@@ -33,14 +33,13 @@ body {
 .header-body {
     padding: 0 200px 0;
     justify-content: space-between;
-    flex: 1;
 }
 
 .header-container {
     flex-direction: column;
     flex: 1;
     align-self: center;
-    gap: 12px
+    gap: 12px;
 }
 
 .header-body-header {
